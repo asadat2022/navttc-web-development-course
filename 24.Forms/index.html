@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../00.Data/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- .container>.row>.col-6*2 -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-6">
+                <div class="card g-4">
+                    <div class="card-body bg-info">
+                        <form action="" id="reg-form" novalidate>
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="" class="form-label">Name</label>
+                                </div>
+                                <div class="col-8">
+                                    <input pattern="[a-zA-Z ]{3,}" type="text" class="form-control" id="name"
+                                        placeholder="Enter Your Name..." required>
+
+                                        <span class="invalid-feedback">Please Enter Valid Name</span>
+                                        <span class="valid-feedback">Looks Good</span>
+                                </div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col-3"><label for="" class="form-label">Father Name</label></div>
+                                <div class="col-8">
+                                    <input type="text" class="form-control" id="father-name"
+                                        placeholder="Enter Father Name..." required>
+                                </div>
+                            </div>
+
+                            <div class="row my-2">
+                                <div class="col-3"><label for="" class="form-label">CNIC</label></div>
+                                <div class="col-8">
+                                    <input type="text" pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}"
+                                        title="CNIC Must be like this 00000-0000000-0" class="form-control" id="cnic"
+                                        placeholder="Enter CNIC..." required>
+                                </div>
+                            </div>
+
+                            <div class="row my-2">
+                                <div class="col-3"><label for="" class="form-label">DOB</label></div>
+                                <div class="col-8">
+                                    <input type="date" class="form-control" id="date" required>
+                                </div>
+                            </div>
+
+                            <div class="row my-2">
+                                <div class="col-3"><label for="" class="form-label">Email</label></div>
+                                <div class="col-8">
+                                    <input type="email" class="form-control" id="email" placeholder="Enter Email"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="row my-2">
+                                <div class="col-3"><label for="" class="form-label">Select Subject</label></div>
+                                <div class="col-8">
+                                    <select name="" id="subject" class="form-select" required>
+                                        <option disabled selected value="">Please Select</option>
+                                        <option value="CS">CS</option>
+                                        <option value="IT">IT</option>
+                                        <option value="BBA">BBA</option>
+                                        <option value="MBA">MBA</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col-3">
+                                    <label for="" class="form-label">Gender</label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="radio" name="gender"checked class="form-check-input" value="Male" required>
+                                    <label for="">Male</label>
+                                    <input type="radio" name="gender" class="form-check-input" value="Female"
+                                        required><label for="">Female</label>
+                                </div>
+                            </div>
+
+                            <div class="row my-2">
+                                <div class="col-3"></div>
+                                <div class="col-8">
+                                    <input type="submit" id="test" class="btn btn-success">
+                                    <!-- <button type="button" class="btn btn-success">Submit</button> -->
+                                </div>
+                            </div>
+                        </form>
+                        <!-- .row>.col-6*2 -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <!-- .card>.card-body>(.row>(.col-6>label.form-label)*2)*7 -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6"><label for="" class="form-label">Name: </label></div>
+                            <div class="col-6"><label for="" class="form-label" id="label-name"></label></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><label for="" class="form-label">Father Name: </label></div>
+                            <div class="col-6"><label for="" class="form-label" id="label-father"></label></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><label for="" class="form-label">CNIC: </label></div>
+                            <div class="col-6"><label for="" class="form-label" id="label-cnic"></label></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><label for="" class="form-label">DOB: </label></div>
+                            <div class="col-6"><label for="" class="form-label" id="label-dob"></label></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><label for="" class="form-label">Email: </label></div>
+                            <div class="col-6"><label for="" class="form-label" id="label-email"></label></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><label for="" class="form-label">Select Subject: </label></div>
+                            <div class="col-6"><label for="" class="form-label" id="label-subject"></label></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><label for="" class="form-label">Gender: </label></div>
+                            <div class="col-6"><label for="" class="form-label" id="label-gender"></label></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../00.Data/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../00.Data/js/jquery-3.7.0.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
+
+
+<!-- <form action="" class="d-flex flex-column">
+                            <label for="">Name</label>
+                            <input type="text">
+                            <input type="password">
+                            <input type="email">
+
+                            <input type="number">
+                            
+                            <input type="checkbox">
+
+                            <input type="radio">
+
+                            <input type="submit">
+                            <input type="reset">
+
+                            <input type="file">
+                            <input type="datetime">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <button>test</button>
+                            <select name="" id="">
+                                <option value="">items 1</option>
+                                <option value="">items 2</option>
+                                <option value="">items 3</option>
+                                <option value="">items 4</option>
+                                <option value="">items 5</option>
+                            </select>
+                        </form> -->

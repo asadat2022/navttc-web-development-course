@@ -1,0 +1,17 @@
+.bg-body{
+    background-image: url(../00.Data/page-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 150px;
+    max-height: 800px;
+}
+.brand-width{
+    width: 150px;
+}
+.bg-header{
+    background-color: #ffffff42;
+}
+#off-nav{
+    width: 150px;
+}

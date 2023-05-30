@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Example Form</title>
+</head>
+
+<body>
+    <form action="" style="border: 1px solid black; padding: 12px;" id="myForm">
+        <table>
+            <tr>
+                <td colspan="2" style="text-align: center;">Student Form</td>
+            </tr>
+            <tr>
+                <td><label for="">First Name</label></td>
+                <td><input type="text" name="first-name" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="">Last Name</label></td>
+                <td><input type="text" name="last-name" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="">Email</label></td>
+                <td><input type="email" name="email" id=""></td>
+            </tr>
+
+            <tr>
+                <td><label for="">Gender</label></td>
+                <td><label for="">Male</label>
+                    <input type="radio" name="gender" value="male" id="">
+                    <label for="">Female</label>
+                    <input type="radio" name="gender" value="female" id="">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="">Hobby</label></td>
+                <td><label for="">Reading</label>
+                    <input type="checkbox" name="Reading" value="true" id="">
+                    <label for="">Traveling</label>
+                    <input type="checkbox" name="Traveling" value="true"  id="">
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td >
+                    <input type="submit">
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div>
+        
+    </div>
+
+    <script>
+        const form = document.getElementById("myForm");
+        
+        form.addEventListener("submit", function(event) {
+          event.preventDefault();
+          const formData = new FormData(form);
+          for (let entry of formData.entries()) {
+            console.log(entry[0] + ": " + entry[1]);
+          }
+        });
+      </script>
+</body>
+
+</html>

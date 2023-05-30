@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../00.Data/bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .body {
+            background-color: rgb(243, 198, 181);
+        }
+
+        .table {
+            background-color: rgb(238, 238, 231);
+            margin: 10px;
+        }
+        .btn{
+            background-color: plum;
+        }
+        .table-header{
+            background-color: plum;
+        }
+    </style>
+</head>
+<body class="body">
+
+    <div class="container">
+        <table class="table">
+            <thead class="table-header">
+                <tr>
+                    <th>userId</th>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>body</th>
+                    <th>Name</th> <!-- Add a new column for displaying the name -->
+                   
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+
+    <script src="../../../00.Data/js/axios.min.js"></script>
+    <script src="../../../00.Data/bootstrap/js/bootstrap.min.js"></script>
+    <script src="6-7-23_2nd.js"></script>
+</body>
+</html>

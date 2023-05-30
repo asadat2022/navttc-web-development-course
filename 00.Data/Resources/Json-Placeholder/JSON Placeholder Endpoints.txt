@@ -1,0 +1,61 @@
+Posts:
+
+GET /posts: Get all posts
+GET /posts/{id}: Get a specific post by ID
+GET /posts/{id}/comments: Get comments for a specific post
+POST /posts: Create a new post
+PUT /posts/{id}: Update a specific post by ID
+PATCH /posts/{id}: Partially update a specific post by ID
+DELETE /posts/{id}: Delete a specific post by ID
+
+
+
+Comments:
+
+GET /comments: Get all comments
+GET /comments/{id}: Get a specific comment by ID
+POST /comments: Create a new comment
+PUT /comments/{id}: Update a specific comment by ID
+PATCH /comments/{id}: Partially update a specific comment by ID
+DELETE /comments/{id}: Delete a specific comment by ID
+
+
+Albums:
+
+GET /albums: Get all albums
+GET /albums/{id}: Get a specific album by ID
+GET /albums/{id}/photos: Get photos for a specific album
+POST /albums: Create a new album
+PUT /albums/{id}: Update a specific album by ID
+PATCH /albums/{id}: Partially update a specific album by ID
+DELETE /albums/{id}: Delete a specific album by ID
+
+
+Photos:
+
+GET /photos: Get all photos
+GET /photos/{id}: Get a specific photo by ID
+POST /photos: Create a new photo
+PUT /photos/{id}: Update a specific photo by ID
+PATCH /photos/{id}: Partially update a specific photo by ID
+DELETE /photos/{id}: Delete a specific photo by ID
+
+
+Users:
+
+GET /users: Get all users
+GET /users/{id}: Get a specific user by ID
+GET /users/{id}/posts: Get posts by a specific user
+POST /users: Create a new user
+PUT /users/{id}: Update a specific user by ID
+PATCH /users/{id}: Partially update a specific user by ID
+DELETE /users/{id}: Delete a specific user by ID
+
+Todos:
+
+GET /todos: Get all todos
+GET /todos/{id}: Get a specific todo by ID
+POST /todos: Create a new todo
+PUT /todos/{id}: Update a specific todo by ID
+PATCH /todos/{id}: Partially update a specific todo by ID
+DELETE /todos/{id}: Delete a specific todo by ID

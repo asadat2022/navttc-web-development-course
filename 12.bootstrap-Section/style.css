@@ -1,0 +1,42 @@
+.app-cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../00.Data/Images/page-cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1000;
+}
+
+.app-cover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #333;
+    background: #000;
+    background: #181d26;
+    opacity: .66;
+}
+
+.brand-width{
+    width: 150px;
+}
+.bg-header{
+    background-color: rgba(0,0,0,.85);
+}
+#off-nav{
+    width: 150px;
+}
+.nav-link-white{
+    color:#fff !important;
+}
+
+
+.nav-link-white.active{
+    color:#000 !important;
+}

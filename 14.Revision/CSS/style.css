@@ -1,0 +1,49 @@
+h1 {
+    color: rgb(154, 46, 46);
+    border: 1px solid #805353;
+}
+#heading {
+    color: rgb(154, 150, 46) ;
+    border: 1px solid #7a8053;
+}
+.headingColor{
+    color: rgb(46, 87, 154);
+    /* border: 1px solid #535e80; */
+    border-width: 2px;
+    border-style: dotted;
+    border-color: #535e80;
+    border-radius: 10px;
+}
+
+body{
+    /* background-color: #535e80;
+    background-image: url(../favicon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center; */
+    /* background: #535e80  url(../favicon.png) no-repeat top center; */
+
+}
+
+.block{
+    border: 1px double rebeccapurple; 
+    /* padding: 10px 20px 30px 40px; */
+    /* padding: 10px 20px 30px;
+    padding: 10px 20px;
+    padding: 10px; */
+    /* margin: 10px; */
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: brown;
+    display: inline-block;
+    overflow: hidden;
+}
+.block:hover{
+
+    background-color: green;
+}
+
+.block:active{
+    background-color: blue;
+}

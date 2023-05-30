@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../00.Data/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-info">
+        <div class="container">
+            <a class="navbar-brand" href="#">JSON Placeholder</a>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-10">
+
+                <div id="success-msg" class="alert alert-success d-none" role="alert">
+                    
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <!-- https://getbootstrap.com/docs/5.0/components/accordion/ -->
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                User Listing
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Username</th>
+                                            <th>Email</th>
+                                            <th>Phone</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="user-list"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#add-user">
+                    Add User
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modal Add User-->
+    <div class="modal fade" id="add-user">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add User</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="">
+                    <div class="modal-body">
+                        <div class="row my-2">
+                            <div class="col-3">
+                                <label for="" class="form-label">Name</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" id="add-name" placeholder="Enter Your Name..."
+                                    required>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-3">
+                                <label for="" class="form-label">Username</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" id="add-username"
+                                    placeholder="Enter Your Username..." required>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-3">
+                                <label for="" class="form-label">Email</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="email" class="form-control" id="add-email"
+                                    placeholder="Enter Your Email..." required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" id="add-submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modal Edit User-->
+    <div class="modal fade" id="edit-user">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit User</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="" id="edit-submit">
+                    <input type="hidden" id="edit-user-id">
+                    <div class="modal-body">
+                        <div class="row my-2">
+                            <div class="col-3">
+                                <label for="" class="form-label">Name</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" id="edit-name" placeholder="Enter Your Name..."
+                                    required>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-3">
+                                <label for="" class="form-label">Username</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" id="edit-username"
+                                    placeholder="Enter Your Username..." required>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-3">
+                                <label for="" class="form-label">Email</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="email" class="form-control" id="edit-email"
+                                    placeholder="Enter Your Email..." required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Edit User-->
+    <div class="modal fade" id="edit-user">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit User</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="" id="edit-submit">
+                    <input type="hidden" id="edit-user-id">
+                    <div class="modal-body">
+                        <div class="row my-2">
+                            <div class="col-3">
+                                <label for="" class="form-label">Name</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" id="edit-name" placeholder="Enter Your Name..."
+                                    required>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-3">
+                                <label for="" class="form-label">Username</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" id="edit-username"
+                                    placeholder="Enter Your Username..." required>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-3">
+                                <label for="" class="form-label">Email</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="email" class="form-control" id="edit-email"
+                                    placeholder="Enter Your Email..." required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Edit User-->
+    <div class="modal fade" id="delete-user">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Delete User</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="">
+                    <input type="hidden" id="delete-user-id">
+
+                    <div class="modal-body">
+                        Are you sure you want to delete this user.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" id="delete-submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal View User -->
+    <div class="modal fade" id="view-user-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">User View</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tbody id="user-view-table">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../00.Data/js/jquery-3.7.0.min.js"></script>
+    <script src="../00.Data/js/popper.min.js"></script>
+    <script src="../00.Data/js/axios.min.js"></script>
+    <script src="../00.Data/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

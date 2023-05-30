@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../00.Data/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title>Document</title>
+</head>
+
+<body class="bg-body">
+  <header id="header" class="sticky-top">
+    <div class="container">
+    <nav class="navbar navbar-expand-sm navbar-dark">
+      <a href="" class="navbar-brand brand-width">
+        <img src="../00.Data/Images/logo.png" alt="" class="img-fluid">
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#off-nav">
+        <i class="bi bi-justify"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="nav-item">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn" style="width: 45px; height: 45px;" type="button"
+                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../00.Data/default-user-image.png" class="img-fluid rounded-circle" alt="">
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="offcanvas offcanvas-start bg-dark" id="off-nav">
+        <div class="offcanvas-body p-0">
+          <div class="list-group">
+            <a href="" class="list-group-item bg-transparent text-white">Home</a>
+            <a href="" class="list-group-item bg-transparent text-white">About</a>
+            <a href="" class="list-group-item bg-transparent text-white">Contact</a>
+            <span class="list-group-item bg-transparent">
+
+              <div class="dropdown">
+                <button class="btn" style="width: 45px; height: 45px;" type="button"
+                  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../00.Data/default-user-image.png" class="img-fluid rounded-circle" alt="">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  </header>
+  <div class="container">
+    <!-- <div class="row text-white align-items-center" style="height: 400px;">
+      <div class="col-12 col-sm-6 ps-sm-5">
+          <h1>Focus on Skills</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+        <button class="btn btn-outline-light rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-play-circle"></i> Watch Video</button>
+      </div>
+      <div class="col-12 col-sm-6">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-2">
+        <div class="card">
+          <img src="../00.Data/img1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-2">
+        <div class="card">
+          <img src="../00.Data/img1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-2">
+        <div class="card">
+          <img src="../00.Data/img1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-2">
+        <div class="card">
+          <img src="../00.Data/img1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-12 p-2">
+        <div class="card">
+          <img src="../00.Data/img1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="card">
+          <img src="../00.Data/img1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="card">
+          <img src="../00.Data/img1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="card">
+          <img src="../00.Data/img1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="card">
+          <img src="../00.Data/img1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="card">
+          <img src="../00.Data/img1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="card">
+          <img src="../00.Data/img1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../00.Data/popper.min.js"></script>
+  <script src="../00.Data/bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    window.onscroll = function () {
+      console.log(window.pageYOffset);
+      if (window.pageYOffset > 0) {
+        document.getElementById('header').classList.add('bg-header');
+      } else {
+        document.getElementById('header').classList.remove('bg-header');
+      }
+    }
+  </script>
+</body>
+
+</html>
