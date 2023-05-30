@@ -12,3 +12,15 @@
 * h5
 * h6
 * p
+* b
+* br
+* hr
+* a
+* img
+
+## CSS ##
+* color
+* background-color
+* border
+* height
+* width
