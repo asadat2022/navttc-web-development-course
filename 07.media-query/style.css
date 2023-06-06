@@ -1,0 +1,28 @@
+.block {
+    height: 200px;
+    width: 200px;
+    min-width: 100px;
+    max-width: 300px;
+    background-color: brown;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+@media screen and (max-width: 300px) {
+    .block {
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px){
+    .block {
+        background-color: gold;
+    }
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 700px){
+    .block {
+        background-color: blue;
+    }
+}
