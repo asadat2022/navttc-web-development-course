@@ -6,18 +6,25 @@
     margin: 5px;
 }
 
-.float-left{
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.float-left {
     float: left;
 }
 
-.float-right{
+.float-right {
     float: right;
 }
 
-.clear-right{
+.clear-right {
     clear: right;
 }
 
-.clear-left{
+.clear-left {
     clear: left;
 }
