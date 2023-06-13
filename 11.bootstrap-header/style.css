@@ -1,0 +1,11 @@
+.bg-body{
+    background-image: url(../00.Data/page-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.brand-width{
+    width: 150px;
+}
+.bg-header{
+    background-color: #ffffff42;
+}
