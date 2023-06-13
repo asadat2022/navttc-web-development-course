@@ -2,10 +2,14 @@
     background-image: url(../00.Data/page-cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 200vh;
 }
 .brand-width{
     width: 150px;
 }
 .bg-header{
     background-color: #ffffff42;
+}
+#off-nav{
+    width: 150px;
 }

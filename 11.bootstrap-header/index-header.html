@@ -10,7 +10,7 @@
 </head>
 
 <body class="bg-body">
-  <header class="bg-header">
+  <header id="header"class="sticky-top">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -18,7 +18,7 @@
             <a href="" class="navbar-brand brand-width">
               <img src="../00.Data/logo.png" alt="" class="img-fluid">
             </a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-item">
+            <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#off-nav">
               <i class="bi bi-justify"></i>
             </button>
             <div class="collapse navbar-collapse" id="nav-item">
@@ -28,6 +28,17 @@
                 <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
               </ul>
             </div>
+            <div class="offcanvas offcanvas-start bg-dark" id="off-nav">
+              <div class="offcanvas-body p-0">
+                <div class="list-group">
+                  <a href="" class="list-group-item bg-transparent text-white">Home</a>
+                  <a href="" class="list-group-item bg-transparent text-white">About</a>
+                  <a href="" class="list-group-item bg-transparent text-white">Contact</a>
+                </div>
+              </div>
+
+            </div>
+
 
           </nav>
         </div>
@@ -36,6 +47,16 @@
   </header>
 
   <script src="../00.Data/bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    window.onscroll = function () {
+      console.log(window.pageYOffset);
+      if (window.pageYOffset > 0) {
+        document.getElementById('header').classList.add('bg-header');
+      } else {
+        document.getElementById('header').classList.remove('bg-header');
+      }
+    }
+  </script>
 </body>
 
 </html>
