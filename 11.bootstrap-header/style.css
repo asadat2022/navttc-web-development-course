@@ -2,7 +2,9 @@
     background-image: url(../00.Data/page-cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200vh;
+    background-position: center;
+    min-height: 150px;
+    max-height: 800px;
 }
 .brand-width{
     width: 150px;
