@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../00.Data/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="app-cover"></div>
+  <header id="header" class="sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <a href="" class="navbar-brand brand-width">
+          <img src="../00.Data/logo.png" alt="" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#off-nav">
+          <i class="bi bi-justify"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="nav-item">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+            <li class="nav-item">
+              <div class="dropdown mt-1">
+                <button class="btn p-0" style="width: 30px; height: 30px;" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../00.Data/default-user-image.png" class="img-fluid rounded-circle" alt="">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="offcanvas offcanvas-start bg-dark" id="off-nav">
+          <div class="offcanvas-body p-0">
+            <div class="list-group">
+              <a href="" class="list-group-item bg-transparent text-white">Home</a>
+              <a href="" class="list-group-item bg-transparent text-white">About</a>
+              <a href="" class="list-group-item bg-transparent text-white">Contact</a>
+              <span class="list-group-item bg-transparent">
+                <div class="dropdown mt-1">
+                  <button class="btn p-0" style="width: 30px; height: 30px;" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../00.Data/default-user-image.png" class="img-fluid rounded-circle" alt="">
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <ul class="nav nav-tabs rounded-top bg-dark">
+          <li class="nav-item">
+            <button class="nav-link nav-link-white active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button">Home</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link nav-link-white" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button">Profile</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link nav-link-white" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button">Contact</button>
+          </li>
+        </ul>
+        <div class="tab-content bg-light p-3 rounded-bottom text-primary">
+          <div class="tab-pane fade show active" id="home">
+            <div class="alert alert-primary" role="alert">
+              A simple primary alert—check it out!
+            </div>
+          </div>
+          <div class="tab-pane fade" id="profile">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="tab-pane fade" id="contact">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="alert alert-primary" role="alert">
+                    A simple primary alert—check it out!
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="alert alert-secondary" role="alert">
+                    A simple secondary alert—check it out!
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="alert alert-success" role="alert">
+                    A simple success alert—check it out!
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../00.Data/popper.min.js"></script>
+  <script src="../00.Data/bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    window.onscroll = function () {
+      console.log(window.pageYOffset);
+      if (window.pageYOffset > 0) {
+        document.getElementById('header').classList.add('bg-header');
+      } else {
+        document.getElementById('header').classList.remove('bg-header');
+      }
+    }
+  </script>
+</body>
+
+</html>
