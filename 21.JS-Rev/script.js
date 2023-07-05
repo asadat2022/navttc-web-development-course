@@ -159,8 +159,45 @@
 
 
 
-function click() {
-    console.log("Button Clicked");
-}
+// function handleClick() {
+//     console.log("Button Clicked");
+//     // document.getElementById('div1').innerText = "lorem";
+//     document.getElementById('div1').innerHTML = "<b>lorem</b>";
+// }
 
-click();
+
+// $('#btn-click').click(() => {
+//     console.log("Button Clicked 2");
+//     // $('div2').text("text");
+//     $('#div2').html("<b>lorem</b>");
+
+//     var te = $('body').text();
+//     console.log(te);
+// });
+
+// $('.btn-success').click(()=>{
+//     $('#div1').hide(2000,()=>{
+//         console.log("Hide");
+//     });
+// })
+
+// $('#btn-click').click(()=>{
+//     $('#div1').show(1000);
+// })
+
+// $('.btn-success').click(()=>{
+//     $('#div1').toggle(1000);
+// })
+
+
+// $('.btn-success').click(()=>{
+//     $('#div1').fadeIn(2000);
+// })
+
+// $('#btn-click').click(()=>{
+//     $('#div1').fadeOut(1000);
+// })
+
+$('.btn-success').click(()=>{
+    $('#div1').fadeToggle(1000);
+})
