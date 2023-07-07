@@ -1,25 +1,32 @@
 
-$(document).ready(function(){
-    axios
-        .get("https://jsonplaceholder.typicode.com/posts",{headers: {'Content-type': 'application/json; charset=UTF-8'}})
+$(document).ready(function () {
+    var data = '<thead><tr>' +
+        '<th>ID</th>' +
+        '<th>User Name</th>' +
+        '<th>Title</th>' +
+        '<th>Body</th>' +
+        '</tr></thead>';
+    axios.get("https://jsonplaceholder.typicode.com/posts")
         .then(function (post) {
-            posts = post.data;
-            axios
-                .get("https://jsonplaceholder.typicode.com/users",{headers: {'Content-type': 'application/json; charset=UTF-8'}})
+            var posts = post.data;
+            axios.get("https://jsonplaceholder.typicode.com/users")
                 .then(function (user) {
                     var users = user.data;
-                    $.each(posts,function (pindex, post) {
-                        let selectuser = null;
-                        $.each(users , function (uindex, user) {
-                            if (post.userId === user.id){
-                                selectuser = user;
-                                return false;
-                            }
-                        });
-                        display(post,selectuser);
+                    posts.forEach(post => {
+                        let obj = users.find((el) => {return el.id === post.userId});
+                        let postData = post;
+                        postData.user = obj;
+
+                        data +='<tr>' +
+                        '<td>' + postData.id + '</td>' +
+                        '<td>' + postData.user.name + '</td>' +
+                        '<td>' + postData.title + '</td>' +
+                        '<td>' + postData.body + '</td>' +
+                        '</tr>'
+
                     });
+                    $('#test').html(data);
                 })
-                .catch(err => console.error(err));
         })
-        .catch(err => console.error(err));
 });
+
