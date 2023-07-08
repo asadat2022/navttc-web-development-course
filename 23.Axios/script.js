@@ -5,6 +5,7 @@ $(document).ready(function () {
         '<th>User Name</th>' +
         '<th>Title</th>' +
         '<th>Body</th>' +
+        '<th>Action</th>' +
         '</tr></thead>';
     axios.get("https://jsonplaceholder.typicode.com/posts")
         .then(function (post) {
@@ -22,6 +23,8 @@ $(document).ready(function () {
                         '<td>' + postData.user.name + '</td>' +
                         '<td>' + postData.title + '</td>' +
                         '<td>' + postData.body + '</td>' +
+                        '<td> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button></td>' +
+                       
                         '</tr>'
 
                     });
