@@ -4,12 +4,18 @@ $(document).ready(() => {
         $('#label-name').text($('#name').val());
         $('#label-father').text($('#father-name').val());
         $('#label-cnic').text($('#cnic').val());
-        $('#label-dob').text($('#date').val());
+        let inputDate = $('#date').val()
+        let date = new Date(inputDate);
+        $('#label-dob').text(date.toDateString('en-PK'));
         $('#label-email').text($('#email').val());
         $('#label-subject').text($('#subject').val());
         $('#label-gender').text($('input[name="gender"]:checked').val());
         $(this).trigger("reset");
     });
+
+    $('#test').click(function() {
+        $(this).attr('disabled',true);
+    })
 });
 
 
