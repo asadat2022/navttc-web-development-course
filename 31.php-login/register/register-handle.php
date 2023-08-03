@@ -14,14 +14,16 @@ if (isset($_POST['submit-btn'])) {
         $record = mysqli_query($connect,$query);
 
         if ($record>0) {
-            echo 'Login';
+            echo '<script>
+            alert("User Add Success Fully");
+            window.location.href = "../login/login.php"
+            </script>';
         }else{
             echo '<script>
             alert("Email OR Username Already Taken")
             window.location.href = "register.php"
             </script>';
         }
-        // header("location:register.php");
     }else{
         echo '<script>
         alert("Password not Match")
