@@ -1,0 +1,156 @@
+/* *********************************************** BODY WORK *************************************************** */
+
+body{
+  width: auto;
+  height: 700px;
+  background-color: #BFC9CA  ;
+}
+
+header{
+  width: auto;
+  height: 40px;
+  margin: -8px -8px 0 -8px;
+  background-color: #373C47;
+}
+
+.content{
+  height: 770px;
+  width: 1150px;
+  margin: -785px 0 0 180px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  float: left;
+}
+
+footer{
+  width: auto;
+  height: 30px;
+  margin: 0 -8px -8px -8px;
+  background-color: #373C47;
+}
+/* *********************************************** BODY WORK *************************************************** */
+
+
+/* ********************************************* NAVIGATION ********************************************* */
+
+nav{
+  height: 800px;
+  width: 175px;
+  margin-left: -8px;
+  background-color: #373C47;
+}
+
+nav ul {
+  height: 700px;
+  width: 135;
+  float: left;
+}
+
+nav ul a{
+  list-style-type: none;
+  text-decoration: none;
+}
+
+nav ul a li{
+  color: #f9efef;
+  font-family: arial;
+  padding: 7px;
+  padding-left: 40px;
+  margin-left: -50px;
+}
+
+nav ul a li:hover {
+  background-color: #888d96;
+  color: #010e2d;
+}
+
+nav ul a li:active {
+  background-color: white;
+  color: red;
+}
+/* ********************************************* NAVIGATION ********************************************* */
+
+/* **********************************SET HEADER ****************************************************** */
+header a, header label ,footer label, div label{
+  /* Text Styiling */
+  color: #f9efef;
+  font-size: 18;
+  font-family: arial;
+  text-decoration: none;
+}
+
+.title{
+  /* Labal Adjesting */
+  width: 340px;
+  height: 40px;
+  box-sizing: border-box;
+  display: block;
+  padding: 10px 0;
+  margin-left: 20px;
+}
+
+.dboard{
+  /* Labal Adjesting */
+  width: 105px;
+  display: block;
+  margin: 0 auto;
+  margin-top: -30px;
+}
+.right-div{
+  width: 600px;
+  height: 40px;
+  float: right;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: -31px;
+}
+
+.adname{
+  width: 400px;
+  height: 40px;
+  float: right;
+  box-sizing: border-box;
+  margin-right: 130px;
+  padding: 10px 10px;
+  text-align: right;
+}
+
+.logoutul{
+  width: 90px;
+  float: right;
+  margin-top: -30px;
+}
+
+.logoutul a li{
+  width: 130px;
+  display: block;
+  float: right;
+  box-sizing: border-box;
+  padding: 10px 30px;
+  margin-top: -11px;
+}
+
+.logoutul a li:hover{
+  background-color: #888d96;
+  color: #010e2d;
+}
+
+.logoutul a li:active{
+  background-color: white;
+  color: red;
+}
+/* **********************************SET HEADER ****************************************************** */
+
+
+/* **********************************SET FOOTER ****************************************************** */
+
+.poweredby{
+  height: 30px;
+  width: 200px;
+  display: block;
+  margin: auto;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}

@@ -1,0 +1,188 @@
+*{
+  font-family: arial;
+}
+
+h1{
+  width: 500px;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+/* **************************************************************************Dashboard**************************************************** */
+.bdtable{
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+.bdtable, .bdtable tr, .bdtable tr td, .bdtable tr th{
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 16;
+}
+
+.bdtable tr th{
+  width: 130px;
+  color: #909090;
+}
+.bdtable tr td{
+  width: 320px;
+  color: #8292B9;
+}
+
+.bdtable tr th, .bdtable tr td{
+  padding: 15px 10px;
+  display: inline-block;
+  border: 1.5px solid #5F6368;
+  margin: -2px -2px 0 0;
+}
+
+.bdtable tr .pass{
+  color: #EB5252;
+  font-style: italic;
+}
+
+.dbbtn{
+  width: 100px;
+  height: 40px;
+  display: block;
+  margin: 20px auto;
+  background-color: #373C47;
+  color: white;
+}
+
+.dbbtn:hover{
+  background-color: #888d96;
+  color: #010e2d;
+  border: 1px solid black;
+}
+
+.dbbtn:active{
+  background-color: white;
+  color: red;
+  border: 3px solid red;
+}
+
+.dbanc{
+  text-decoration: none;
+}
+/* **************************************************************************Dashboard**************************************************** */
+
+/* **************************************************************************Admin View**************************************************** */
+.viewad{
+  width: 1100px;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.viewad, .viewad tr, .viewad tr th, .viewad tr td{
+  border: 1px solid #373C47;
+  border-collapse: collapse;
+}
+
+.viewad tr th, .viewad tr td{
+  width: 200px;
+  color: #373C47;
+  font-size: 16;
+  padding: 6px;
+  text-align: center;
+  padding: 10px;
+}
+
+.edtdelbtn{
+  height: 35px;
+  width: 70%;
+  padding: 2px;
+  background-color: #373C47;
+  color: white;
+}
+
+.edtdelbtn:hover{
+  background-color: #888d96;
+  color: #010e2d;
+  border: 1px solid black;
+}
+
+.edtdelbtn:active{
+  background-color: white;
+  color: red;
+  border: 3px solid red;
+}
+
+/* **************************************************************************Admin View**************************************************** */
+
+/* **************************************************************************Add Admin**************************************************** */
+.add{
+  width: 100px;
+  height: 40px;
+  text-decoration: none;
+  margin: 20px auto;
+  background-color: #373C47;
+  color: white;
+}
+
+
+.add:hover{
+  background-color: #888d96;
+  color: #010e2d;
+  border: 1px solid black;
+}
+
+.add:active{
+  background-color: white;
+  color: red;
+  border: 3px solid red;
+}
+
+.addtable{
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+.addinput{
+  height: 40px;
+  width: 250px;
+  font-size: 16;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #E5E7E9;
+}
+
+.addinput:focus{
+  border: 3px solid red;
+}
+.addtable tr td{
+  border: 0px solid #373C47;
+  font-size: 16;
+  text-align: left;
+}
+/* **************************************************************************Add Admin**************************************************** */
+
+/* **************************************************************************Delete Admin**************************************************** */
+
+.delbtn{
+  width: auto;
+  height: 40px;
+  display: block;
+  margin: 20px auto;
+  background-color: #373C47;
+  color: white;
+}
+
+.delbtn:hover{
+  background-color: #888d96;
+  color: #010e2d;
+  border: 1px solid black;
+}
+
+.delbtn:active{
+  background-color: white;
+  color: red;
+  border: 3px solid red;
+}
+
+.delanc{
+  text-decoration: none;
+}
+/* **************************************************************************Delete Admin**************************************************** */
