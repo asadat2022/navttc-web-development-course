@@ -1,0 +1,33 @@
+.block {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border: 1px solid red;
+}
+
+body{
+    display: flex;
+}
+@media screen and (max-width: 500px) {
+    body{
+        display: block;
+    }
+    .block {
+
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        border: 1px solid red;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+
+    .block {
+
+        height: 150px;
+        width: 150px;
+        background-color: brown;
+        border: 1px solid red;
+    }
+}
