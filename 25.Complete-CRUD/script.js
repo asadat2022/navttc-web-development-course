@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    var base = 'http://localhost:5000';
+    var base = 'https://jsonplaceholder.typicode.com';
     axios.get(base + '/users').then((userRes) => {
         let users = userRes.data;
         users.forEach((user) => {
